@@ -1,0 +1,67 @@
+# CoatMath
+
+> Free paint calculator that tells you exactly which cans to buy: gallons, quarts or 5-gallon buckets, with cost. Rooms, ceilings, exterior, primer. No signup.
+
+URL: https://matt5516.github.io/paint-calc/
+Last updated: 2026-10-17
+Cost: free, no signup, runs in the browser.
+
+## Key facts
+- Paint needed (gallons) = wall area × coats ÷ coverage per gallon. Wall area = perimeter × height − doors (default 20 sq ft each) − windows (15 sq ft each).
+- Default coverage is 350 sq ft per gallon. PaintCare: most coverage rates are 300 to 400 sq ft per gallon; use 350 for a rough estimate; rough textures may need up to 50 percent more paint.
+- Example: a 12 × 12 ft room, 8 ft walls, 1 door, 2 windows = 384 − 50 = 334 sq ft; 2 coats at 350 = 1.91 gallons; cheapest cans = 2 gallons ($90 at default prices).
+- Default prices (typical 2026 US mid-grade interior, all editable): gallon $45, quart $20, 5-gallon bucket $200; primer gallon $30, 5-gallon $120.
+- Can mix: the cheapest combination of 5-gallon buckets, gallons and quarts that covers the need. 2.1 gallons = 2 gallons + 1 quart ($110) at default prices; 9 gallons = 1 bucket + 4 gallons ($380).
+- A 5-gallon bucket ($200) costs the same as 4 gallons + 1 quart at default prices, so past 4 gallons the bucket wins.
+- Square feet ÷ 9 = square yards. Square feet × 0.0929 = square meters. A gable is ½ × width × rise.
+- Planned domain coatmath.com is pending the owner’s approval; the site is served at matt5516.github.io/paint-calc.
+
+## Tools (one page each)
+- [Paint calculator](https://matt5516.github.io/paint-calc/paint-calculator/): Free paint calculator. Enter room size, doors, windows and coats to get gallons needed and the cheapest cans to buy (buckets, gallons, quarts) with a cost. How it works: Wall area = perimeter × height − doors (20 sq ft each) − windows (15 each). Gallons = area × coats ÷ coverage (350 sq ft per gallon by default). Then we find the cheapest mix of 5-gallon buckets, gallons and quarts that covers it.
+- [Wall paint calculator](https://matt5516.github.io/paint-calc/wall-paint-calculator/): Free wall paint calculator. Add walls by width and height, subtract doors and windows, and get gallons plus the cheapest cans to buy for an accent wall or a room. How it works: Each wall = width × height − its doors and windows. Walls are added, then gallons = area × coats ÷ coverage, and we pick the cheapest cans.
+- [Ceiling paint calculator](https://matt5516.github.io/paint-calc/ceiling-paint-calculator/): Free ceiling paint calculator. Enter length and width (or square feet), pick flat or vaulted, and get gallons and the cheapest cans to buy, with a cost. How it works: Flat ceiling area = length × width. A vaulted ceiling has two slopes, each √((width ÷ 2)² + rise²) × length. Gallons = area × coats ÷ coverage (350 by default).
+- [Exterior house paint calculator](https://matt5516.github.io/paint-calc/exterior-paint-calculator/): Free exterior paint calculator. Enter house size, stories, gables, doors, windows and siding type to get gallons and the cheapest mix of 5-gallon buckets and cans. How it works: Walls = perimeter × height (10 ft per story), plus gables (½ × width × rise), minus doors, windows and garage doors. Gallons = area × coats ÷ coverage for your siding type.
+- [Square footage calculator](https://matt5516.github.io/paint-calc/square-footage-calculator/): Free square footage calculator. Add rectangles, L-shapes, circles and triangles, subtract cutouts, and get square feet, square yards and square meters. How it works: Rectangle = length × width. L-shape = outer length × outer width − notch. Circle = π × (diameter ÷ 2)². Triangle = ½ × base × height. Square yards = sq ft ÷ 9; m² = sq ft × 0.0929.
+- [Primer calculator](https://matt5516.github.io/paint-calc/primer-calculator/): Free primer calculator. Enter the area, pick the surface (new drywall, glossy, dark to light, stain blocking) and coats to get gallons and the cheapest cans to buy. How it works: Gallons = area × coats ÷ primer coverage (250 sq ft per gallon by default). Then we pick the cheapest mix of 5-gallon buckets, gallons and quarts.
+- [Paint cost estimator](https://matt5516.github.io/paint-calc/paint-cost-calculator/): Free paint cost calculator. Estimate paint, primer and supplies for rooms you paint yourself and compare the total with a pro quote you enter. How it works: Paint cost = the cheapest cans for your area and coats (at your gallon price). DIY total = paint + primer + supplies. Enter a pro quote to compare. Your time is not priced in.
+
+## Guides
+- [How much paint do I need?](https://matt5516.github.io/paint-calc/how-much-paint-do-i-need/): How much paint to buy: wall area × coats ÷ coverage per gallon. Worked example, coverage ranges, coats and which cans to buy (gallons, quarts, 5-gallon buckets).
+- [How much paint for a room (chart)](https://matt5516.github.io/paint-calc/how-much-paint-for-a-room-chart/): Paint chart for common room sizes: wall square feet, gallons for two coats and the cans to buy for 8 ft and 9 ft ceilings, from 10x10 to 20x20.
+- [How much does a gallon of paint cover?](https://matt5516.github.io/paint-calc/how-much-does-a-gallon-of-paint-cover/): A gallon of paint covers about 300 to 400 square feet; 350 is a good estimate. Coverage by surface, plus what a quart and a 5-gallon bucket cover.
+- [How much paint for a bedroom?](https://matt5516.github.io/paint-calc/how-much-paint-for-a-bedroom/): Gallons of paint for a bedroom by size: 10x10, 12x12, 12x14 and 14x16 with one door and two windows, two coats, plus the cheapest cans to buy.
+- [How much paint for a bathroom?](https://matt5516.github.io/paint-calc/how-much-paint-for-a-bathroom/): Gallons of paint for a bathroom by size, 5x5 to 8x10 with a door and a window, two coats, and the cheapest cans to buy. A quart often does a powder room.
+- [How much paint for a kitchen?](https://matt5516.github.io/paint-calc/how-much-paint-for-a-kitchen/): Gallons of paint for a kitchen by size, 10x10 to 12x15 with two doorways and two windows, two coats, and the cheapest cans to buy. Subtract cabinets.
+- [How much paint for a house exterior?](https://matt5516.github.io/paint-calc/how-much-paint-to-paint-a-house-exterior/): Exterior paint by house size: gallons for 1,000 to 3,000 sq ft homes, 1 and 2 stories, two coats, with the cheapest mix of 5-gallon buckets and gallons.
+- [Gallons vs a 5-gallon bucket](https://matt5516.github.io/paint-calc/gallons-vs-5-gallon-bucket/): When is a 5-gallon bucket of paint cheaper than gallons? Break-even at typical 2026 prices ($45 gallon, $200 bucket), with a table of the cheapest cans by need.
+- [Do I need primer?](https://matt5516.github.io/paint-calc/do-i-need-primer/): When you need primer before painting: new drywall, stains, glossy surfaces and dark-to-light color changes. Plus how much primer to buy and what it costs.
+- [How to measure a room for paint](https://matt5516.github.io/paint-calc/how-to-measure-a-room-for-paint/): How to measure a room for paint in four steps: length, width and wall height, then doors and windows. Includes a worked example and the formula.
+
+## FAQ
+### How much paint do I need?
+Wall area (perimeter × height, minus doors and windows) × coats ÷ coverage per gallon. A 12 × 12 ft room with 8 ft walls, one door and two windows has 334 sq ft of wall, so two coats at 350 sq ft per gallon is 1.91 gallons: buy 2 gallons.
+
+### How much does a gallon of paint cover?
+Most cans say 300 to 400 square feet per gallon, and PaintCare suggests using 350 for a rough estimate. Rough textures can need up to 50 percent more paint. A quart covers a quarter of that.
+
+### How many gallons of paint for a 12x12 room?
+About 2 gallons for the walls with two coats (1.91 gallons exact), and 1 more gallon if you also paint the ceiling.
+
+### Is a 5-gallon bucket cheaper than gallons?
+Often. At typical 2026 prices ($45 a gallon, $200 a bucket) a bucket costs the same as four gallons plus a quart, so once you need more than 4 gallons the bucket gives you 5 for the price of 4 and a quart. CoatMath compares them for you.
+
+### Do I need primer?
+Not always. New drywall, stains, glossy surfaces and big color changes usually do. Add a primer line in the calculator to see the cans and cost.
+
+### Are the prices accurate?
+They are typical 2026 US mid-grade interior prices, labeled as such, and every one is editable. Type your store’s price for an exact total.
+
+### Does CoatMath store my measurements?
+No. Everything stays in your browser. Your numbers appear in the page link only so you can share the result.
+
+## Related tools
+- [GradeOrFlip](https://gradeorflip.com/): Is it worth grading? Profit and break-even by grade for PSA, SGC, BGS and CGC.
+- [EnrollMath](https://enrollmath.com/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
+- [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [BagOrBulk](https://bagorbulk.com/): Concrete, gravel, mulch and topsoil calculators: yards, tons, bags, and whether bags or bulk costs less.
+- [ClockInMath](https://matt5516.github.io/time-card-calc/): Time card calculator: weekly hours, decimal hours, overtime and gross pay, with a printable timesheet.

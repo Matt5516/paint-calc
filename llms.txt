@@ -3,7 +3,7 @@
 > Free paint calculator that tells you exactly which cans to buy: gallons, quarts or 5-gallon buckets, with cost. Rooms, ceilings, exterior, primer. No signup.
 
 URL: https://matt5516.github.io/paint-calc/
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 Cost: free, no signup, runs in the browser.
 
 ## Key facts

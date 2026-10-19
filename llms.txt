@@ -3,7 +3,7 @@
 > Free paint calculator that tells you exactly which cans to buy: gallons, quarts or 5-gallon buckets, with cost. Rooms, ceilings, exterior, primer. No signup.
 
 URL: https://matt5516.github.io/paint-calc/
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 Cost: free, no signup, runs in the browser.
 
 ## Key facts
@@ -36,6 +36,46 @@ Cost: free, no signup, runs in the browser.
 - [Gallons vs a 5-gallon bucket](https://matt5516.github.io/paint-calc/gallons-vs-5-gallon-bucket/): When is a 5-gallon bucket of paint cheaper than gallons? Break-even at typical 2026 prices ($45 gallon, $200 bucket), with a table of the cheapest cans by need.
 - [Do I need primer?](https://matt5516.github.io/paint-calc/do-i-need-primer/): When you need primer before painting: new drywall, stains, glossy surfaces and dark-to-light color changes. Plus how much primer to buy and what it costs.
 - [How to measure a room for paint](https://matt5516.github.io/paint-calc/how-to-measure-a-room-for-paint/): How to measure a room for paint in four steps: length, width and wall height, then doors and windows. Includes a worked example and the formula.
+- [How much paint for a ceiling? (chart)](https://matt5516.github.io/paint-calc/how-much-paint-for-a-ceiling/): Ceiling paint by room size: gallons for 1 and 2 coats and the cans to buy for 10x10 to 16x20 ceilings, with a vaulted-ceiling adjustment.
+- [10×10 ceiling](https://matt5516.github.io/paint-calc/how-much-paint-for-a-10x10-ceiling/): A 10x10 ceiling is 100 sq ft: gallons for 1, 2 and 3 coats, cans to buy and cost, plus vaulted and primer numbers.
+- [10×12 ceiling](https://matt5516.github.io/paint-calc/how-much-paint-for-a-10x12-ceiling/): A 10x12 ceiling is 120 sq ft: gallons for 1, 2 and 3 coats, cans to buy and cost, plus vaulted and primer numbers.
+- [12×12 ceiling](https://matt5516.github.io/paint-calc/how-much-paint-for-a-12x12-ceiling/): A 12x12 ceiling is 144 sq ft: gallons for 1, 2 and 3 coats, cans to buy and cost, plus vaulted and primer numbers.
+- [12×14 ceiling](https://matt5516.github.io/paint-calc/how-much-paint-for-a-12x14-ceiling/): A 12x14 ceiling is 168 sq ft: gallons for 1, 2 and 3 coats, cans to buy and cost, plus vaulted and primer numbers.
+- [14×16 ceiling](https://matt5516.github.io/paint-calc/how-much-paint-for-a-14x16-ceiling/): A 14x16 ceiling is 224 sq ft: gallons for 1, 2 and 3 coats, cans to buy and cost, plus vaulted and primer numbers.
+- [1,000 sq ft house exterior](https://matt5516.github.io/paint-calc/how-many-gallons-of-paint-for-a-1000-sq-ft-house-exterior/): Exterior paint for a 1,000 sq ft house: gallons for 1 and 2 stories, 1 to 3 coats, siding type, gables and cost with the cans to buy.
+- [1,500 sq ft house exterior](https://matt5516.github.io/paint-calc/how-many-gallons-of-paint-for-a-1500-sq-ft-house-exterior/): Exterior paint for a 1,500 sq ft house: gallons for 1 and 2 stories, 1 to 3 coats, siding type, gables and cost with the cans to buy.
+- [2,000 sq ft house exterior](https://matt5516.github.io/paint-calc/how-many-gallons-of-paint-for-a-2000-sq-ft-house-exterior/): Exterior paint for a 2,000 sq ft house: gallons for 1 and 2 stories, 1 to 3 coats, siding type, gables and cost with the cans to buy.
+- [2,500 sq ft house exterior](https://matt5516.github.io/paint-calc/how-many-gallons-of-paint-for-a-2500-sq-ft-house-exterior/): Exterior paint for a 2,500 sq ft house: gallons for 1 and 2 stories, 1 to 3 coats, siding type, gables and cost with the cans to buy.
+- [3,000 sq ft house exterior](https://matt5516.github.io/paint-calc/how-many-gallons-of-paint-for-a-3000-sq-ft-house-exterior/): Exterior paint for a 3,000 sq ft house: gallons for 1 and 2 stories, 1 to 3 coats, siding type, gables and cost with the cans to buy.
+- [How much paint for a door?](https://matt5516.github.io/paint-calc/how-much-paint-for-a-door/): A door needs about a quart for two coats. Square feet per door (both sides and edges), gallons for 1 to 15 doors and the cans to buy.
+- [How much paint for trim & baseboards?](https://matt5516.github.io/paint-calc/how-much-paint-for-trim/): Trim paint by room: linear feet of baseboard and casing, square feet at 4 in wide, gallons for two coats and whether a quart is enough.
+- [How much paint for a fence? (chart)](https://matt5516.github.io/paint-calc/how-much-paint-for-a-fence/): Fence paint by length: gallons for a 6 ft fence painted on both sides, two coats, with waste, from 25 to 300 feet, and the cans to buy.
+- [50 ft fence](https://matt5516.github.io/paint-calc/how-much-paint-for-a-50-ft-fence/): Paint for a 50 ft fence: gallons for 4, 6 and 8 ft heights, one or both sides, 250 or 350 sq ft per gallon, and cost.
+- [100 ft fence](https://matt5516.github.io/paint-calc/how-much-paint-for-a-100-ft-fence/): Paint for a 100 ft fence: gallons for 4, 6 and 8 ft heights, one or both sides, 250 or 350 sq ft per gallon, and cost.
+- [150 ft fence](https://matt5516.github.io/paint-calc/how-much-paint-for-a-150-ft-fence/): Paint for a 150 ft fence: gallons for 4, 6 and 8 ft heights, one or both sides, 250 or 350 sq ft per gallon, and cost.
+- [200 ft fence](https://matt5516.github.io/paint-calc/how-much-paint-for-a-200-ft-fence/): Paint for a 200 ft fence: gallons for 4, 6 and 8 ft heights, one or both sides, 250 or 350 sq ft per gallon, and cost.
+- [How much paint for an accent wall?](https://matt5516.github.io/paint-calc/how-much-paint-for-an-accent-wall/): Accent wall paint by size: 8x8 to 20x9 ft, gallons for 2 and 3 coats and the cheapest cans. Usually a quart or one gallon.
+- [10×8 accent wall](https://matt5516.github.io/paint-calc/how-much-paint-for-a-10x8-accent-wall/): A 10x8 ft accent wall is 80 sq ft: gallons for 1, 2 and 3 coats, whether a quart is enough, with a window or door, and primer.
+- [12×8 accent wall](https://matt5516.github.io/paint-calc/how-much-paint-for-a-12x8-accent-wall/): A 12x8 ft accent wall is 96 sq ft: gallons for 1, 2 and 3 coats, whether a quart is enough, with a window or door, and primer.
+- [16×9 accent wall](https://matt5516.github.io/paint-calc/how-much-paint-for-a-16x9-accent-wall/): A 16x9 ft accent wall is 144 sq ft: gallons for 1, 2 and 3 coats, whether a quart is enough, with a window or door, and primer.
+- [How much primer for a room? (chart)](https://matt5516.github.io/paint-calc/how-much-primer-for-a-room/): Primer needed by room size: gallons of primer for walls at 250 sq ft per gallon, the cans to buy and the cost for 10x10 to 20x20 rooms.
+- [Primer for a 12×12 room](https://matt5516.github.io/paint-calc/how-much-primer-for-a-12x12-room/): Primer for a 12x12 room: gallons for walls and ceiling at 200, 250 and 300 sq ft per gallon, the cans to buy and the cost.
+- [Primer for a 12×14 room](https://matt5516.github.io/paint-calc/how-much-primer-for-a-12x14-room/): Primer for a 12x14 room: gallons for walls and ceiling at 200, 250 and 300 sq ft per gallon, the cans to buy and the cost.
+- [Primer for a 14×16 room](https://matt5516.github.io/paint-calc/how-much-primer-for-a-14x16-room/): Primer for a 14x16 room: gallons for walls and ceiling at 200, 250 and 300 sq ft per gallon, the cans to buy and the cost.
+- [10×10 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-10x10-room/): Paint for a 10x10 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [10×12 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-10x12-room/): Paint for a 10x12 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [11×12 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-11x12-room/): Paint for a 11x12 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [12×12 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-12x12-room/): Paint for a 12x12 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [12×14 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-12x14-room/): Paint for a 12x14 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [12×15 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-12x15-room/): Paint for a 12x15 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [13×15 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-13x15-room/): Paint for a 13x15 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [14×14 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-14x14-room/): Paint for a 14x14 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [14×16 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-14x16-room/): Paint for a 14x16 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [15×20 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-15x20-room/): Paint for a 15x20 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [16×16 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-16x16-room/): Paint for a 16x16 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [16×20 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-16x20-room/): Paint for a 16x20 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [18×20 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-18x20-room/): Paint for a 18x20 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
+- [20×20 room](https://matt5516.github.io/paint-calc/how-much-paint-for-a-20x20-room/): Paint for a 20x20 room: gallons for 1 and 2 coats with 8, 9 and 10 ft walls, cans to buy, cost and the ceiling add-on.
 
 ## FAQ
 ### How much paint do I need?

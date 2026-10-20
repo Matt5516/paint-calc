@@ -83,25 +83,25 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
   // ---------- shared result panel ----------
   function panel(sum, o) {
     o = o || {}; var L = sum.lines, h = '';
-    if (!L.length) return '<div class="empty">' + UI.icon('chart') + '<p><strong>' + (o.empty || 'Enter your measurements') + '</strong><br>Live results appear here as you type.</p></div>';
+    if (!L.length) return '<div class="empty">' + UI.icon('chart') + '<p><strong>' + (o.empty || 'Add your measurements') + '</strong><br>Your cans show up here as you type.</p></div>';
     var one = L.length === 1, big;
     if (one) big = 'Buy ' + esc(L[0].mix.label) + ' of ' + esc(L[0].label.toLowerCase()) + ', about ' + m(sum.cost) + '.';
     else big = 'Your shopping list: about ' + m(sum.cost) + '.';
     h += '<h2>' + UI.icon('check') + 'Buy this</h2>';
     h += '<div class="verdict good"><span class="vicon">' + UI.icon('check') + '</span><div><strong class="big">' + big + '</strong><span>' +
-      (one ? 'You need ' + d2(L[0].gallons) + ' gallons. This mix holds ' + d2(L[0].mix.capacity) + ' gallons, leaving about ' + d2(L[0].mix.leftover) + ' gallon.' :
+      (one ? 'You need ' + d2(L[0].gallons) + ' gallons. This mix holds ' + d2(L[0].mix.capacity) + ', so about ' + d2(L[0].mix.leftover) + ' gallon is left over.' :
         L.map(function (l) { return esc(l.mix.label) + ' of ' + esc(l.label.toLowerCase()); }).join(' · ')) + '</span></div></div>';
     h += '<div class="stats s3">' + stat('Area to cover', fmt(sum.area, 0) + ' sq ft') + stat('Gallons needed (exact)', d2(sum.gallons)) + stat('Cost of this mix', m(sum.cost)) + '</div>';
     h += '<div class="stats">' + stat('Leftover', '~' + d2(sum.leftover) + ' gal') + stat('Round up to whole gallons', m(sum.roundUpCost)) + '</div>';
     var diff = sum.roundUpCost - sum.cost;
     h += '<p class="cm-alt"><strong>Round-up alternative:</strong> ' + L.map(function (l) { return esc(l.roundUp.label) + ' of ' + esc(l.label.toLowerCase()); }).join(', ') + ' costs ' + m(sum.roundUpCost) +
-      (diff > 0.004 ? ', so the mix above saves ' + m(diff) + '.' : diff < -0.004 ? ', which is ' + m(-diff) + ' less than the mix, but you would run short. Use the mix.' : ', the same price as the mix.') + '</p>';
+      (diff > 0.004 ? ', so the mix above saves ' + m(diff) + '.' : diff < -0.004 ? ', which is ' + m(-diff) + ' less than the mix, but you would run short. Stick with the mix.' : ', the same price as the mix.') + '</p>';
     if (!one || o.table) h += '<div class="table-scroll"><table class="cm-tbl"><caption class="sr-only">Shopping list</caption><thead><tr><th scope="col">Item</th><th scope="col" class="r">Sq ft</th><th scope="col" class="r">Gallons</th><th scope="col">Buy</th><th scope="col" class="r">Cost</th></tr></thead><tbody>' +
       L.map(function (l) { return '<tr><td>' + esc(l.label) + '</td><td class="r">' + fmt(l.area, 0) + '</td><td class="r">' + d2(l.gallons) + '</td><td>' + esc(l.mix.label) + '</td><td class="r">' + m(l.mix.cost) + '</td></tr>'; }).join('') +
       '</tbody><tfoot><tr><td>Total</td><td class="r">' + fmt(sum.area, 0) + '</td><td class="r">' + d2(sum.gallons) + '</td><td></td><td class="r">' + m(sum.cost) + '</td></tr></tfoot></table></div>';
     if (o.after) h += o.after;
     if (o.diagram) h += o.diagram;
-    h += '<p class="hint">' + (o.note || '') + ' Prices are typical 2026 US figures; edit them to your store’s. Estimates only: check the coverage on your can’s label.</p>';
+    h += '<p class="hint">' + (o.note || '') + ' Prices are typical 2026 US figures. Swap in your store’s. Check the coverage on your can’s label.</p>';
     h += '<div class="actions no-print"><button type="button" class="btn ghost sm" data-print>' + UI.icon('copy') + 'Print shopping list</button><button type="button" class="btn ghost sm" id="copySum">' + UI.icon('copy') + 'Copy list</button></div>';
     last = 'CoatMath shopping list: ' + L.map(function (l) { return l.mix.label + ' of ' + l.label.toLowerCase() + ' (' + d2(l.gallons) + ' gal needed)'; }).join('; ') + '. About ' + m(sum.cost) + '. ' + location.href;
     return h;
@@ -114,7 +114,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
   function validate() {
     var bad = 0; form.querySelectorAll('input[type=number]').forEach(function (el) { var b = el.value !== '' && (+el.value < 0 || !isFinite(+el.value)); el.setAttribute('aria-invalid', b ? 'true' : 'false'); if (b) bad++; }); return bad;
   }
-  var ALERT = '<div class="alert err">' + UI.icon('alert') + '<div>Some numbers are negative or invalid. Fix the highlighted fields.</div></div>';
+  var ALERT = '<div class="alert err">' + UI.icon('alert') + '<div>Negative or invalid numbers. Fix the highlighted fields.</div></div>';
   function coats() { return Math.max(1, Math.min(4, Math.round(n('co')) || 1)); }
   function wasteP() { return n('ws'); }
 
@@ -146,7 +146,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       var w4 = [r0.l, r0.w, r0.l, r0.w].map(function (w) { return { w: w, h: r0.h, doors: 0, windows: 0 }; }), oi = 0, q; for (q = 0; q < Math.min(r0.doors || 0, 8); q++) w4[oi++ % 4].doors++; for (q = 0; q < Math.min(r0.windows || 0, 16); q++) w4[oi++ % 4].windows++;
       var dia = strip(w4, 'Room 1 walls laid flat') || '';
       var note = 'Wall area = perimeter × height − doors − windows (' + fmt(g0, 0) + ' − ' + fmt(per[0].o, 0) + ' = ' + fmt(per[0].net, 0) + ' sq ft for room 1). Gallons = area × coats ÷ coverage.' + (useTrim ? ' Trim = baseboard + door and window casing, about ' + C.TRIM_IN + ' in wide (' + fmt(trim, 0) + ' sq ft).' : '');
-      return panel(sum, { after: after, diagram: dia, note: note, empty: 'Enter a room’s length, width and height' });
+      return panel(sum, { after: after, diagram: dia, note: note, empty: 'Add a room’s length, width and height' });
     } };
 
   T.wall = {
@@ -160,7 +160,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       segs.forEach(function (s, i) { var net = C.netArea(s.w * s.h, C.openingsArea({ doors: s.doors, windows: s.windows, doorSize: ds, windowSize: wz })); tot += net; var el = form.querySelectorAll('#walls [data-sum]')[i]; if (el) el.textContent = net ? fmt(net, 0) + ' sq ft' : ''; });
       var lines = [C.line({ label: segs.length === 1 ? 'Accent wall paint' : 'Wall paint', area: tot, coats: co, coverage: cv, waste: ws, prices: P })];
       if ($('pr').value === '1') lines.push(C.line({ label: 'Primer', area: tot, coats: 1, coverage: n('pc'), waste: ws, prices: R }));
-      return panel(C.summary(lines), { diagram: strip(segs, 'Your walls laid flat'), note: 'Each wall is width × height minus its doors and windows.', empty: 'Enter a wall’s width and height' });
+      return panel(C.summary(lines), { diagram: strip(segs, 'Your walls laid flat'), note: 'Each wall is width × height minus its doors and windows.', empty: 'Add a wall’s width and height' });
     } };
 
   T.ceiling = {
@@ -171,7 +171,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       else if (vault) { area = C.vaultedCeilingArea(l, w, rise); dia = vaultSvg(w, rise, l); } else { area = C.ceilingArea(l, w); dia = topdown(l, w, 'Ceiling seen from below'); }
       var lines = [C.line({ label: 'Ceiling paint', area: area, coats: co, coverage: cv, waste: ws, prices: P })];
       if ($('pr').value === '1') lines.push(C.line({ label: 'Primer', area: area, coats: 1, coverage: n('pc'), waste: ws, prices: R }));
-      return panel(C.summary(lines), { diagram: dia, note: vault && $('md').value !== 'sf' ? 'Vaulted: two slopes, each √((width ÷ 2)² + rise²) × length, so ' + fmt(area, 0) + ' sq ft instead of ' + fmt(l * w, 0) + ' flat.' : 'Ceiling area = length × width.', empty: 'Enter the ceiling’s length and width' });
+      return panel(C.summary(lines), { diagram: dia, note: vault && $('md').value !== 'sf' ? 'Vaulted: two slopes, each √((width ÷ 2)² + rise²) × length, so ' + fmt(area, 0) + ' sq ft instead of ' + fmt(l * w, 0) + ' flat.' : 'Ceiling area = length × width.', empty: 'Add the ceiling’s length and width' });
     } };
 
   T.exterior = {
@@ -183,7 +183,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       var lines = [C.line({ label: 'Exterior paint', area: ex.net, coats: co, coverage: cv, waste: ws, prices: P })];
       if ($('pr').value === '1') lines.push(C.line({ label: 'Primer', area: ex.net, coats: 1, coverage: n('pc'), waste: ws, prices: R }));
       ex.windowsCount = n('wn');
-      return panel(C.summary(lines), { diagram: house(ex, 'House side, schematic'), note: 'Walls ' + fmt(ex.perimeter, 0) + ' ft around × ' + fmt(ex.height, 1) + ' ft = ' + fmt(ex.walls, 0) + ' sq ft' + (ex.gables ? ', + gables ' + fmt(ex.gables, 0) + ' sq ft' : '') + ', − openings ' + fmt(ex.openings, 0) + ' = ' + fmt(ex.net, 0) + ' sq ft. Buckets are 5 gallons.', empty: 'Enter the house length and width' });
+      return panel(C.summary(lines), { diagram: house(ex, 'House side, schematic'), note: 'Walls ' + fmt(ex.perimeter, 0) + ' ft around × ' + fmt(ex.height, 1) + ' ft = ' + fmt(ex.walls, 0) + ' sq ft' + (ex.gables ? ', + gables ' + fmt(ex.gables, 0) + ' sq ft' : '') + ', − openings ' + fmt(ex.openings, 0) + ' = ' + fmt(ex.net, 0) + ' sq ft. Buckets are 5 gallons.', empty: 'Add the house length and width' });
     } };
 
   T.primer = {
@@ -192,7 +192,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       var co = coats(), ws = wasteP(), R = prices('r'), area = n('ar');
       var line = C.line({ label: 'Primer', area: area, coats: co, coverage: n('cv'), waste: ws, prices: R });
       var tips = { drywall: 'New drywall is porous and soaks up paint. One coat of drywall primer evens it out so the paint color looks uniform.', glossy: 'Glossy surfaces need a bonding primer so the paint grips. Scuff-sand first and wipe off dust.', dark: 'Going dark to light: a primer (ideally tinted toward the new color) cuts the number of paint coats. PaintCare notes a very dark to very light change can take three or four coats.', stain: 'Stain-blocking primers seal water, smoke and marker stains. Stubborn stains may need a second coat; let the first dry fully.' };
-      return panel(C.summary([line]), { note: (tips[$('sf').value] || '') + ' Coats and coverage are starting points, so check your primer’s label.', empty: 'Enter the area to prime' });
+      return panel(C.summary([line]), { note: (tips[$('sf').value] || '') + ' Coats and coverage are starting points. Check your primer’s label.', empty: 'Add the area to prime' });
     } };
 
   T.cost = {
@@ -202,10 +202,10 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       var P = C.scalePrices(C.PRICES.paint, gp), R = C.PRICES.primer, lines = [C.line({ label: 'Paint', area: area, coats: co, coverage: n('cv'), waste: ws, prices: P })];
       if ($('pr').value === '1') lines.push(C.line({ label: 'Primer', area: area, coats: 1, coverage: n('pc'), waste: ws, prices: R }));
       var sum = C.summary(lines), sup = n('su'), diy = C.diyCost(sum.cost, 0, sup), pro = C.proCost(area, n('pf'), n('pt')), after;
-      after = '<div class="stats">' + stat('DIY: paint + supplies', m(diy)) + stat('Pro quote', pro == null ? 'Enter a quote' : m(pro)) + '</div>';
+      after = '<div class="stats">' + stat('DIY: paint + supplies', m(diy)) + stat('Pro quote', pro == null ? 'Add a quote' : m(pro)) + '</div>';
       if (pro != null) after += '<p class="cm-alt"><strong>' + (pro > diy ? 'DIY costs ' + m(pro - diy) + ' less' : pro < diy ? 'The pro quote is ' + m(diy - pro) + ' less' : 'Same cost') + '</strong> before counting your time. Paint ' + m(sum.cost) + ' + supplies ' + m(sup) + ' = ' + m(diy) + '.</p>';
-      else after += '<p class="cm-alt">Get a quote and enter it above (a total, or a price per sq ft) to compare it with your DIY cost of ' + m(diy) + '. Paint ' + m(sum.cost) + ' + supplies ' + m(sup) + '.</p>';
-      return panel(sum, { after: after, note: 'Your own time is not priced in. Paint prices scale from your gallon price.', empty: 'Enter rooms and wall area' });
+      else after += '<p class="cm-alt">Got a pro quote? Enter it above (a total, or a price per sq ft) to compare it with your DIY cost of ' + m(diy) + '. Paint ' + m(sum.cost) + ' + supplies ' + m(sup) + '.</p>';
+      return panel(sum, { after: after, note: 'Your time isn’t priced in. Quart and bucket prices scale from your gallon price.', empty: 'Add rooms and wall area' });
     } };
 
   T.sqft = {
@@ -220,7 +220,7 @@ addEventListener('DOMContentLoaded', function () { 'use strict';
       var shapes = ed.shapes.read().map(function (r) { return { type: r[0], unit: r[1], sign: r[2] === '-' ? -1 : 1, a: num(r[3]), b: num(r[4]), c: num(r[5]), d: num(r[6]) }; });
       var res = C.squareFootage(shapes, n('cp') || 0);
       shapes.forEach(function (s, i) { var el = form.querySelectorAll('#shapes [data-sum]')[i]; if (el) el.textContent = (res.parts[i] < 0 ? '−' : '') + fmt(Math.abs(res.parts[i]), 2) + ' sq ft'; });
-      if (!(res.sqft > 0)) { $('toPaint').hidden = true; return '<div class="empty">' + UI.icon('chart') + '<p><strong>Enter your measurements</strong><br>Live results appear here as you type.</p></div>'; }
+      if (!(res.sqft > 0)) { $('toPaint').hidden = true; return '<div class="empty">' + UI.icon('chart') + '<p><strong>Add your measurements</strong><br>Your total shows up here as you type.</p></div>'; }
       var f = shapes[0], rl, rw;
       if (shapes.length === 1 && f.type === 'rect') { rl = C.toFeet(f.a, f.unit); rw = C.toFeet(f.b, f.unit); } else { rl = rw = Math.sqrt(res.sqft); }
       var a = $('toPaintLink'); a.href = UI.root() + 'paint-calculator/?rm=' + [fmt(rl, 2).replace(/,/g, ''), fmt(rw, 2).replace(/,/g, ''), 8, 0, 0].join(':'); $('toPaint').hidden = false;

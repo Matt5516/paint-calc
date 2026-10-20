@@ -14,16 +14,15 @@ Cost: free, no signup, runs in the browser.
 - Can mix: the cheapest combination of 5-gallon buckets, gallons and quarts that covers the need. 2.1 gallons = 2 gallons + 1 quart ($110) at default prices; 9 gallons = 1 bucket + 4 gallons ($380).
 - A 5-gallon bucket ($200) costs the same as 4 gallons + 1 quart at default prices, so past 4 gallons the bucket wins.
 - Square feet ÷ 9 = square yards. Square feet × 0.0929 = square meters. A gable is ½ × width × rise.
-- Planned domain coatmath.com is pending the owner’s approval; the site is served at matt5516.github.io/paint-calc.
 
 ## Tools (one page each)
-- [Paint calculator](https://matt5516.github.io/paint-calc/paint-calculator/): Free paint calculator. Enter room size, doors, windows and coats to get gallons needed and the cheapest cans to buy (buckets, gallons, quarts) with a cost. How it works: Wall area = perimeter × height − doors (20 sq ft each) − windows (15 each). Gallons = area × coats ÷ coverage (350 sq ft per gallon by default). Then we find the cheapest mix of 5-gallon buckets, gallons and quarts that covers it.
-- [Wall paint calculator](https://matt5516.github.io/paint-calc/wall-paint-calculator/): Free wall paint calculator. Add walls by width and height, subtract doors and windows, and get gallons plus the cheapest cans to buy for an accent wall or a room. How it works: Each wall = width × height − its doors and windows. Walls are added, then gallons = area × coats ÷ coverage, and we pick the cheapest cans.
-- [Ceiling paint calculator](https://matt5516.github.io/paint-calc/ceiling-paint-calculator/): Free ceiling paint calculator. Enter length and width (or square feet), pick flat or vaulted, and get gallons and the cheapest cans to buy, with a cost. How it works: Flat ceiling area = length × width. A vaulted ceiling has two slopes, each √((width ÷ 2)² + rise²) × length. Gallons = area × coats ÷ coverage (350 by default).
-- [Exterior house paint calculator](https://matt5516.github.io/paint-calc/exterior-paint-calculator/): Free exterior paint calculator. Enter house size, stories, gables, doors, windows and siding type to get gallons and the cheapest mix of 5-gallon buckets and cans. How it works: Walls = perimeter × height (10 ft per story), plus gables (½ × width × rise), minus doors, windows and garage doors. Gallons = area × coats ÷ coverage for your siding type.
-- [Square footage calculator](https://matt5516.github.io/paint-calc/square-footage-calculator/): Free square footage calculator. Add rectangles, L-shapes, circles and triangles, subtract cutouts, and get square feet, square yards and square meters. How it works: Rectangle = length × width. L-shape = outer length × outer width − notch. Circle = π × (diameter ÷ 2)². Triangle = ½ × base × height. Square yards = sq ft ÷ 9; m² = sq ft × 0.0929.
-- [Primer calculator](https://matt5516.github.io/paint-calc/primer-calculator/): Free primer calculator. Enter the area, pick the surface (new drywall, glossy, dark to light, stain blocking) and coats to get gallons and the cheapest cans to buy. How it works: Gallons = area × coats ÷ primer coverage (250 sq ft per gallon by default). Then we pick the cheapest mix of 5-gallon buckets, gallons and quarts.
-- [Paint cost estimator](https://matt5516.github.io/paint-calc/paint-cost-calculator/): Free paint cost calculator. Estimate paint, primer and supplies for rooms you paint yourself and compare the total with a pro quote you enter. How it works: Paint cost = the cheapest cans for your area and coats (at your gallon price). DIY total = paint + primer + supplies. Enter a pro quote to compare. Your time is not priced in.
+- [Paint calculator](https://matt5516.github.io/paint-calc/paint-calculator/): Free paint calculator. Enter room size, doors, windows and coats to get gallons needed and the cheapest cans to buy (buckets, gallons, quarts) with a cost. The math: Wall area = perimeter × height − doors (20 sq ft each) − windows (15 each). Gallons = area × coats ÷ coverage (350 sq ft per gallon by default). Then the cheapest mix of 5-gallon buckets, gallons and quarts that covers it.
+- [Wall paint calculator](https://matt5516.github.io/paint-calc/wall-paint-calculator/): Free wall paint calculator. Add walls by width and height, subtract doors and windows, and get gallons plus the cheapest cans to buy for an accent wall or a room. The math: Each wall = width × height − its doors and windows. Walls are added, then gallons = area × coats ÷ coverage, and the cheapest cans win.
+- [Ceiling paint calculator](https://matt5516.github.io/paint-calc/ceiling-paint-calculator/): Free ceiling paint calculator. Enter length and width (or square feet), pick flat or vaulted, and get gallons and the cheapest cans to buy, with a cost. The math: Flat ceiling area = length × width. A vaulted ceiling has two slopes, each √((width ÷ 2)² + rise²) × length. Gallons = area × coats ÷ coverage (350 by default).
+- [Exterior house paint calculator](https://matt5516.github.io/paint-calc/exterior-paint-calculator/): Free exterior paint calculator. Enter house size, stories, gables, doors, windows and siding type to get gallons and the cheapest mix of 5-gallon buckets and cans. The math: Walls = perimeter × height (10 ft per story), plus gables (½ × width × rise), minus doors, windows and garage doors. Gallons = area × coats ÷ coverage for your siding type.
+- [Square footage calculator](https://matt5516.github.io/paint-calc/square-footage-calculator/): Free square footage calculator. Add rectangles, L-shapes, circles and triangles, subtract cutouts, and get square feet, square yards and square meters. The math: Rectangle = length × width. L-shape = outer length × outer width − notch. Circle = π × (diameter ÷ 2)². Triangle = ½ × base × height. Square yards = sq ft ÷ 9; m² = sq ft × 0.0929.
+- [Primer calculator](https://matt5516.github.io/paint-calc/primer-calculator/): Free primer calculator. Enter the area, pick the surface (new drywall, glossy, dark to light, stain blocking) and coats to get gallons and the cheapest cans to buy. The math: Gallons = area × coats ÷ primer coverage (250 sq ft per gallon by default). Then the cheapest mix of 5-gallon buckets, gallons and quarts.
+- [Paint cost estimator](https://matt5516.github.io/paint-calc/paint-cost-calculator/): Free paint cost calculator. Estimate paint, primer and supplies for rooms you paint yourself and compare the total with a pro quote you enter. The math: Paint cost = the cheapest cans for your area and coats (at your gallon price). DIY total = paint + primer + supplies. Enter a pro quote to compare. Your time is not priced in.
 
 ## Guides
 - [How much paint do I need?](https://matt5516.github.io/paint-calc/how-much-paint-do-i-need/): How much paint to buy: wall area × coats ÷ coverage per gallon. Worked example, coverage ranges, coats and which cans to buy (gallons, quarts, 5-gallon buckets).
@@ -79,7 +78,7 @@ Cost: free, no signup, runs in the browser.
 
 ## FAQ
 ### How much paint do I need?
-Wall area (perimeter × height, minus doors and windows) × coats ÷ coverage per gallon. A 12 × 12 ft room with 8 ft walls, one door and two windows has 334 sq ft of wall, so two coats at 350 sq ft per gallon is 1.91 gallons: buy 2 gallons.
+Wall area (perimeter × height, minus doors and windows) × coats ÷ coverage per gallon. Example: a 12 × 12 ft room with 8 ft walls, one door and two windows has 334 sq ft of wall, so two coats at 350 sq ft per gallon is 1.91 gallons: buy 2 gallons.
 
 ### How much does a gallon of paint cover?
 Most cans say 300 to 400 square feet per gallon, and PaintCare suggests using 350 for a rough estimate. Rough textures can need up to 50 percent more paint. A quart covers a quarter of that.
@@ -88,21 +87,21 @@ Most cans say 300 to 400 square feet per gallon, and PaintCare suggests using 35
 About 2 gallons for the walls with two coats (1.91 gallons exact), and 1 more gallon if you also paint the ceiling.
 
 ### Is a 5-gallon bucket cheaper than gallons?
-Often. At typical 2026 prices ($45 a gallon, $200 a bucket) a bucket costs the same as four gallons plus a quart, so once you need more than 4 gallons the bucket gives you 5 for the price of 4 and a quart. CoatMath compares them for you.
+Often. At typical 2026 prices ($45 a gallon, $200 a bucket) a bucket costs the same as four gallons plus a quart, so once you need more than 4 gallons the bucket gives you 5 for the price of 4 and a quart. The calculator does that comparison for you.
 
 ### Do I need primer?
 Not always. New drywall, stains, glossy surfaces and big color changes usually do. Add a primer line in the calculator to see the cans and cost.
 
 ### Are the prices accurate?
-They are typical 2026 US mid-grade interior prices, labeled as such, and every one is editable. Type your store’s price for an exact total.
+They are typical 2026 US mid-grade interior prices. Type in your store’s price and the total follows.
 
-### Does CoatMath store my measurements?
-No. Everything stays in your browser. Your numbers appear in the page link only so you can share the result.
+### Do you store my measurements?
+No. Everything stays in your browser. Your numbers show up in the page link only so you can share the result.
 
 ## Related tools
 - [GradeOrFlip](https://gradeorflip.com/): Is it worth grading? Profit and break-even by grade for PSA, SGC, BGS and CGC.
 - [EnrollMath](https://enrollmath.com/): HSA vs PPO break-even, COBRA cost and marketplace comparison with 2026/2027 IRS limits.
-- [DynastyMath](https://dynastymath.com/): Start/sit calls, dynasty trade calculator with picks, and Sleeper league import.
+- [DynastyMath](https://dynastymath.com/): Start/sit calls, a dynasty trade calculator with picks, and Sleeper league import.
 - [BagOrBulk](https://bagorbulk.com/): Concrete, gravel, mulch and topsoil calculators: yards, tons, bags, and whether bags or bulk costs less.
 - [ClockInMath](https://matt5516.github.io/time-card-calc/): Time card calculator: weekly hours, decimal hours, overtime and gross pay, with a printable timesheet.
 - [SidewallMath](https://matt5516.github.io/tire-size-calc/): Tire size calculator: compare two sizes, true speedometer, sizes that fit your wheel, regear and wheel offset.
